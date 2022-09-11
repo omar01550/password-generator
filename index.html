@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>password Generator</title>
+  </head>
+  <body>
+        <main id="page">
+            <div class="card">
+                 <header>
+                     <div id="password">
+                         83498590485
+                     </div>
+                     <div id="copy-btn"><i class="fa-solid fa-copy"></i></div>
+                 </header>
+
+                 <section class="content">
+                      <div class="char-length">
+                            <span>character length</span>
+                            <span class="character-count">10</span>
+                      </div>
+                      <input type="range" name="" value="70">
+                      <div class="filter">
+                          <div class="uppercase">
+                               <span class="check" data-target="uppercase"></span>
+                               <label>inclue uppercase</label>
+                          </div>
+                          <div class="lowercase">
+                             <span class="check" data-target="lowercase"></span>
+                             <label>inclue lower</label>
+                          </div>
+                          <div class="numbers">
+                            <span class="check" data-target="numbers"></span>
+                            <label>inclue numbers</label>
+                          </div>
+                          <div class="symbole">
+                            <span class="check" data-target="symbole"></span>
+                            <label>inclue symbole</label>
+                          </div>
+                      </div>
+
+                      <div class="password-strength">
+                            <span>strength</span>
+                            <span class="password-level">hard</span>
+                            <div class="bolets">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                      </div>
+                      <button class="Generator">Generate</button>
+                 </section>
+            </div>
+        </main>
+        <input type="text" name="" value="" class="text">
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>

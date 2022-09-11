@@ -1,0 +1,155 @@
+:root{
+   --black-color:black;
+   --main-color:#e91e63;
+   --gray-color:#0f0f0f;
+}
+
+html{
+   font-size:20px;
+}
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   color: white;
+}
+
+#page{
+   width: 100%;
+   min-height: 100vh;
+   background-color: var(--black-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card{
+   width: 600px;
+   min-height: 400px;
+}
+
+.card header{
+   padding:10px 20px;
+   background-color: var(--gray-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: bold;
+   font-size:1.6rem;
+}
+header i{
+   color: var(--main-color);
+   cursor: pointer;
+}
+#password{
+   user-select: all;
+}
+
+.card .content{
+   margin-top: 1.8rem;
+   background-color: var(--gray-color);
+   padding:20px;
+}
+
+.char-length{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.char-length span:nth-child(2){
+    font-weight: bold;
+    font-size:2rem;
+    color: var(--main-color);
+}
+
+[type="range"]{
+   margin-top:1rem;
+   width: 100%;
+   cursor: pointer;
+}
+
+/*filter section*/
+.filter{
+   margin-top:30px;
+
+}
+.filter div{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+.filter div .check{
+    width:20px;
+    height: 20px;
+    border:2px solid white;
+    display: block;
+    cursor: pointer;
+}
+.filter div label{
+     margin-left: 30px;
+     font-size:1.4rem;
+
+}
+.filter .uppercase{
+
+}
+.filter .lowercase{}
+.filter .numbers{}
+.filter .symbole{}
+
+
+.password-strength{
+   margin-top:30px;
+   background-color: var(--black-color);
+   padding:20px 30px;
+   text-transform: uppercase;
+   color: var(--gray-color);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.password-level{
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.bolets {
+   width:60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+ .bolets span{
+   display: block;
+   width:10px;
+   height: 20px;
+   display: block;
+    border:2px solid white;
+
+
+}
+
+button.Generator{
+  margin-top:20px;
+  background-color: var(--main-color);
+  padding:20px ;
+  text-align: center;
+  color: white;
+  border:none;
+  width: 100%;
+  font-size:2rem;
+  cursor: pointer;
+
+
+}
+
+
+.checked{
+   background-color: var(--main-color);
+}
