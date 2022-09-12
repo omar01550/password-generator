@@ -1,11 +1,11 @@
 :root{
    --black-color:black;
-   --main-color:#e91e63;
+   --main-color:#4caf50;
    --gray-color:#0f0f0f;
 }
 
 html{
-   font-size:20px;
+   font-size:16px;
 }
 *{
    padding:0;
@@ -15,6 +15,10 @@ html{
    color: white;
 }
 
+body{
+  font-family: 'Cairo', sans-serif;
+
+}
 #page{
    width: 100%;
    min-height: 100vh;
@@ -26,7 +30,7 @@ html{
 
 .card{
    width: 600px;
-   min-height: 400px;
+   min-height: 300px;
 }
 
 .card header{
@@ -68,7 +72,23 @@ header i{
    margin-top:1rem;
    width: 100%;
    cursor: pointer;
+   overflow: hidden;
+      -webkit-appearance: none;
+      background-color: #9a905d;
+      border-radius: 5px;
 }
+
+[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: -407px 0 0 400px var(--main-color);
+
+
+}
+
 
 /*filter section*/
 .filter{
@@ -90,7 +110,8 @@ header i{
 .filter div label{
      margin-left: 30px;
      font-size:1.4rem;
-
+     user-select: none;
+     cursor: pointer;
 }
 .filter .uppercase{
 
@@ -113,7 +134,7 @@ header i{
 
 
 .password-level{
-  color: white;
+  color: var(--main-color);
   text-transform: uppercase;
 
 }
@@ -145,8 +166,7 @@ button.Generator{
   width: 100%;
   font-size:2rem;
   cursor: pointer;
-
-
+  border-radius: 5px;
 }
 
 
